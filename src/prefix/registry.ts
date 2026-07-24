@@ -18,7 +18,7 @@ for (const command of slashCommands) {
   const subcommands = command.data.toJSON().options?.filter((option) => option.type === 1).map((option) => option.name) ?? [];
   const prefixCommand: PrefixCommand = {
     name,
-    aliases: name === "levels" ? ["level"] : [],
+    aliases: name === "levels2" ? ["level", "levels"] : name === "moderation" ? ["mod"] : [],
     description: `${subcommands.length ? `${subcommands.length} actions` : "Command"} from the ${name} pack.`,
     async execute({ message, args, prefix }) {
       const action = args[0];
