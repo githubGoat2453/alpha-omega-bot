@@ -14,11 +14,7 @@ export const prefixCommands: PrefixCommand[] = [
     aliases: ["commands", "cmds"],
     description: "List available prefix commands.",
     async execute({ message, prefix }) {
-      const list = prefixCommands
-        .filter((command) => !command.ownerOnly)
-        .map((command) => `\`${prefix}${command.name}\` — ${command.description}`)
-        .join("\n");
-      await message.reply(`**Alpha Omega prefix commands**\n${list}`);
+      await message.reply(`**Alpha Omega command center**\nBrowse every slash command, prefix pack, permission, and example here:\nhttps://alpha-omega-command-center.gases-bidders8re1xyr.chatgpt.site\n\nQuick test: \`${prefix}ping\` · \`${prefix}commands\``);
     },
   },
   {
