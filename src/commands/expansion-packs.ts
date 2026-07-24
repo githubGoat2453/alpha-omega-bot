@@ -197,6 +197,7 @@ export const ticketsPack = generatedPack("tickets", "Tickets", "ticket");
 export const formsPack = generatedPack("forms", "Forms", "form");
 export const eventsPack = generatedPack("events", "Events", "event");
 export const xpPack = generatedPack("xp", "XP", "xp");
+export const levelPack = generatedPack("level", "Levels", "level");
 export const rewardsPack = generatedPack("rewards", "Rewards", "reward");
 export const shopPack = generatedPack("shop", "Shop", "shop");
 export const profilesPack = generatedPack("profiles", "Profiles", "profile");
@@ -245,4 +246,4 @@ const fiveHundredPackDefinitions: Array<[string, string, string]> = [
 ];
 const fiveHundredPacks = fiveHundredPackDefinitions.map(([name, label, seed]) => generatedPack(name, label, seed));
 
-export const expansionPacks = [securityPack, economyPack, socialPack, productivityPack, gamesPack, musicPack, mediaPack, supportPack, rolesPack, welcomePack, loggingPack, automodPack, aiPack, analyticsPack, giveawaysPack, invitesPack, channelsPack, threadsPack, webhooksPack, configPack, ticketsPack, formsPack, eventsPack, xpPack, rewardsPack, shopPack, profilesPack, integrationsPack, backupsPack, antiRaidPack, moderationPlusPack, customCommandsPack, ...bulkPacks, ...thousandPacks, ...fiveHundredPacks];
+export const expansionPacks = [securityPack, economyPack, socialPack, productivityPack, gamesPack, musicPack, mediaPack, supportPack, rolesPack, welcomePack, loggingPack, automodPack, aiPack, analyticsPack, giveawaysPack, invitesPack, channelsPack, threadsPack, webhooksPack, configPack, ticketsPack, formsPack, eventsPack, xpPack, levelPack, rewardsPack, shopPack, profilesPack, integrationsPack, backupsPack, antiRaidPack, moderationPlusPack, customCommandsPack, ...bulkPacks, ...thousandPacks, ...fiveHundredPacks];
