@@ -1,0 +1,24 @@
+{
+  "name": "alpha-omega-bot",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc -p tsconfig.json",
+    "audit:commands": "npm run build && node dist/audit-commands.js",
+    "start": "node dist/index.js",
+    "deploy:commands": "tsx src/deploy-commands.ts"
+  },
+  "dependencies": {
+    "discord.js": "^14.21.0",
+    "dotenv": "^16.6.1",
+    "pino": "^9.7.0",
+    "zod": "^4.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.0",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3"
+  }
+}
