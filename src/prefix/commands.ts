@@ -129,7 +129,7 @@ export const prefixCommands: PrefixCommand[] = [
     aliases: ["allcommands", "catalog"],
     description: "Show Alpha Omega command-pack totals.",
     async execute({ message }) {
-      await message.reply("Alpha Omega command packs: security, economy, social, productivity, games, music, media, and support.");
+      await message.reply("Alpha Omega command catalog: 120 slash command packs, 2,860 registered subcommand operations, and prefix mirrors for every pack.");
     },
   },
 ];
